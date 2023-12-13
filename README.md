@@ -42,32 +42,36 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
     - Resultat attendu : affichage de page d'acceuil
     
 
-- Cas de test n°2 : Créer un compte via le site
-  - Action n°1 : Cliquer sur le bouton "create account"
-    - Resultat Attendu : Affichage d'un nouveau page 'signup'
+- Cas de test n°2 : Contrôler la page de création d'un compte 
+  - Action n°1 : Sur la page d'accueil, cliquer sur le bouton "create account"
+    - Resultat Attendu : Affichage d'une nouvelle page '/signup'
   - Action n°2 : Contrôler le contenu de la page d'inscription
     - Resultat Attendu :
       - Affichage full name , Email, Password, Confirm Password
-      - Affichage d'un bouton signup
+      - Affichage d'un bouton signup et bouton "continue with Google"
 
 
-- Cas de test 3: Remplir le Formulaire d'inscription
+
+- Cas de test 3 : Créer un compte via le formulaire d'inscription
   - Action n°1 : Renseigner les champs (full name, Email, Password, Confirm Password) avec des formats valides et puis cliquer sur le bouton 'signup' 
-    - Resultat attendu:redirection au page '/Account'
-  - Action n°2 : Cliquer sur le bouton Signup sans renseigner de champs
+    - Resultat attendu : redirection à la page d'accueil en mode connecté, c'est-à-dire avec les bouton "My Account" et "Sign out"
+
+- Cas de test n°4 : Créer un compte via le formulaire d'inscription sans renseigner de champs
+  - Action n°1 : 
     - Resultat attendu : Affichage d'un message "veuillez renseigner ce champ"
-  - Action n°3 : entrer un format de mail invalide
+    - Action n°3 : entrer un format de mail invalide
+      - Resultat attendu : Message d'erreur
+    - Action n°4 : Entrer un password d'une longueur inferieure a 8 caracteres
     - Resultat attendu : Message d'erreur
-  - Action n°4 : Entrer un password d'une longueur inferieure a 8 caracteres
-  - Resultat attendu : Message d'erreur
 
 
 - Cas de test n°4 : creer un compte avec Google OAuth
   - Action n°1 : Cliquer sur le bouton "create account"
-    - Resultat Attendu : Affichage d'une option "continuer with Google"
-  - Action n°2 : Cliquer sur l'option "Continuer with Google"
+    - Resultat Attendu : Affichage d'une nouvelle page 'signup' avec le bouton "continuer with Google"
+  - Action n°2 : Cliquer sur le bouton "Continuer with Google"
     - Resultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
-
+  - Action n°3 : Entrer des identifiants Google valides 
+    - Résultat attendu : Affichage de la page d'accueil en mode connecté, c'est-à-dire, avec les boutons "My Account" et "Sign out'" 
 
 - Cas de test n°5 : se connecter avec ses identifiants et mot de passe avec un compte créer via le site
   - Action n°1 : Renseinger les champs (Email, Password) correct et cliquer sur le bouton login
