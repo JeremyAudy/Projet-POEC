@@ -1,6 +1,6 @@
 ## Introduction
 - Ce projet s'inscrit dans le cadre de la POEC Testeur logiciel
-
+- Ce porjet a pour objectif d'évaluer nos compétences en tant que Testeur QA
 
 ## Pre-requisites
 - docker (& docker-compose)
