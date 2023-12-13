@@ -50,19 +50,21 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
       - Affichage full name , Email, Password, Confirm Password
       - Affichage d'un bouton signup et bouton "continue with Google"
 
-
-
 - Cas de test 3 : Créer un compte via le formulaire d'inscription
   - Action n°1 : Renseigner les champs (full name, Email, Password, Confirm Password) avec des formats valides et puis cliquer sur le bouton 'signup' 
     - Resultat attendu : redirection à la page d'accueil en mode connecté, c'est-à-dire avec les bouton "My Account" et "Sign out"
 
 - Cas de test n°4 : Créer un compte via le formulaire d'inscription sans renseigner de champs
-  - Action n°1 : 
+  - Action n°1 : Cliquer sur le bouton "Signup" sans renseigner de champs
     - Resultat attendu : Affichage d'un message "veuillez renseigner ce champ"
-    - Action n°3 : entrer un format de mail invalide
-      - Resultat attendu : Message d'erreur
-    - Action n°4 : Entrer un password d'une longueur inferieure a 8 caracteres
+
+- Cas de test n°5 : Créer un compte via le formulaire d'inscription avec mail au format invalide
+  - Action n°1 : entrer un format de mail invalide
     - Resultat attendu : Message d'erreur
+  
+- Cas de test n°6 : Créer un compte via le formulaire d'inscription avec un mot de passe de mois de 8 caractères.
+  - Action n°4 : Entrer un password d'une longueur inferieure a 8 caracteres
+  - Resultat attendu : Message d'erreur
 
 
 - Cas de test n°4 : creer un compte avec Google OAuth
