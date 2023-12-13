@@ -1,3 +1,7 @@
+## Introduction
+- Ce projet s'inscrit dans le cadre de la POEC Testeur logiciel
+
+
 ## Pre-requisites
 - docker (& docker-compose)
 
