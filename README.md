@@ -10,6 +10,22 @@
 - docker-compose up
 - Visit http://localhost:8080/
 
+## User story
+En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'application avec Google OAuth et également avec nos identifiants et mot de passe, afin que je puisse accéder à mon compte
+
+## Acceptance criteria
+### Acceptance criteria n°1
+- Scénario : l'utilisateur a créé un compte avec Google OAuth
+- Etant donné que : je suis un utilisateur déconnecté et que je suis sur la page de connexion
+- Lorsque : lorsque je clique sur le bouton "Continue with Google"
+- Alors : la fenêtre "Connexion : comptes google" apparait
+
+### Acceptance criteria n°2
+- Scénario : l'utilisateur a créé un compte via Google OAuth
+- Etant donné que : je suis un utilisateur déconnecté et que je suis sur la page de connexion
+- Lorsque : lorsque je saisis une adresse mail et un mot de passe valides et que je clique sur le bouton "Login"
+- Alors : le système me connecte
+
 ## Use cases
 - Accéder au site
 - Créer un compte via le site
@@ -35,15 +51,15 @@
       - Affichage d'un bouton signup
 
 
-- Cas de test 3:
-  - Action n°1 :
-    - Renseigner les champs(full name, Email, Password, Confirm Password) avec des formats valides et puis cliquer sur le bouton 'signup' 
-      - Resultat attendu:redirection au page '/Account'
-    - Cliquer sur le bouton Signup sans renseigner de champs 
-      - Resultat attendu : Affichage d'un message veuillez renseigner ce champ
-  - Action n°2:
-    - Entrer un format de mail invalide
-      - Resultat attendu : Message d'erreur
+- Cas de test 3: Remplir le Formulaire d'inscription
+  - Action n°1 : Renseigner les champs (full name, Email, Password, Confirm Password) avec des formats valides et puis cliquer sur le bouton 'signup' 
+    - Resultat attendu:redirection au page '/Account'
+  - Action n°2 : Cliquer sur le bouton Signup sans renseigner de champs
+    - Resultat attendu : Affichage d'un message "veuillez renseigner ce champ"
+  - Action n°3 : entrer un format de mail invalide
+    - Resultat attendu : Message d'erreur
+  - Action n°4 : Entrer un password d'une longueur inferieure a 8 caracteres
+  - Resultat attendu : Message d'erreur
 
 
 - Cas de test n°4 : creer un compte avec Google OAuth
@@ -53,7 +69,7 @@
     - Resultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
 
 
-- Cas de test n°5 : se connecter avec ses identifiants et mot de passe avec compte créer via le site
+- Cas de test n°5 : se connecter avec ses identifiants et mot de passe avec un compte créer via le site
   - Action n°1 : Renseinger les champs (Email, Password) correct et cliquer sur le bouton login
     - Resultat attendu : Affichage d'un message 'Success! You are logged in.'
   - Action n°2 : taper un email qui n'existe pas a la base 
@@ -69,11 +85,5 @@
 - Cas de test n°6 : cliquer sur le lien 'forgot your password'
   - Resultat attendu : Affichage d'un nouveau page'/forgot'
 
-
-- Cas de test n°7 : Se connecter avec Google OAuth avec compte créer via le site
-  - Action n°1 : cliquer sur le bouton 'continuer with Google'
-    - Resultat attendu : 'Affichage d'un message' Success! You are logged in.'
-
-
-- Cas de test n°8 : cliquer sur le bouton 'sign out' 
+- Cas de test n°7 : cliquer sur le bouton 'sign out' 
   - Resultat attendu :' suscces de sign out'
