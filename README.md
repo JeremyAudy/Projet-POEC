@@ -23,8 +23,8 @@ Cas de test1:Accéder au site
 Cliquer sur le lien de connexion au site
 Resultat attendu: affichage de page d'acceuil
 cas de test2:Créer un compte via le site
--Action1:Cliquer sur le bouton "create account"=>Resultat Attendu : Affichage d'un nouveau page 'signup'
--Action2:Contrôler le contenu de la page d'inscription=>Resultat Attendu :-Affichage full name ,Email,Password,Confirm Password
+- Action1:Cliquer sur le bouton "create account"=>Resultat Attendu : Affichage d'un nouveau page 'signup'
+- Action2:Contrôler le contenu de la page d'inscription=>Resultat Attendu :-Affichage full name ,Email,Password,Confirm Password
                                                                   -Affichage d'un bouton signup
 -Cas de test 3:
 -Renseigner les champs(full name ,Email,Password,Confirm Password) avec des format valide et puis cliquer sur le bouton 'signup' => Resultat attendu:redirection au page '/Account'
