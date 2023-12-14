@@ -48,8 +48,8 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
     - Resultat Attendu : Affichage d'une nouvelle page '/signup'
   - Action n°2 : Contrôler le contenu de la page d'inscription
     - Resultat Attendu :
-      - Affichage full name , Email, Password, Confirm Password
-      - Affichage d'un bouton signup et bouton "continue with Google"
+      - Affichage des champs "full name" , "Email", "Password", "Confirm Password"
+      - Affichage d'un bouton "signup" et bouton "continue with Google"
 
 ### Création de compte
 - Cas de test 3 : Créer un compte via le formulaire d'inscription 
@@ -58,15 +58,15 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
 
 - Cas de test n°4 : Créer un compte via le formulaire d'inscription sans renseigner de champs
   - Action n°1 : Cliquer sur le bouton "Signup" sans renseigner de champs
-    - Resultat attendu : Affichage d'un message "veuillez renseigner ce champ"
+    - Resultat attendu : Affichage sous forme de pop-up à côté du champ "Full name" d'un message "veuillez renseigner ce champ" 
 
-- Cas de test n°5 : Créer un compte via le formulaire d'inscription avec mail au format invalide
+- Cas de test n°5 : Créer un compte via le formulaire d'inscription avec un Email au format invalide (tous les cas d'email invalide)
   - Action n°1 : entrer un format de mail invalide
-    - Resultat attendu : Message d'erreur
+    - Resultat attendu : Affichage sous forme de pop-up à côté du champ "Email" d'un message d'un message d'erreur 
   
 - Cas de test n°6 : Créer un compte via le formulaire d'inscription avec un mot de passe de mois de 8 caractères.
   - Action n°1 : Entrer un password d'une longueur inferieure a 8 caracteres
-  - Resultat attendu : Message d'erreur "Password must be at least 8 characters long"
+  - Resultat attendu : Affichage dans la page du message d'erreur "Password must be at least 8 characters long"
 
 
 - Cas de test n°7 : creer un compte avec Google OAuth avec des identifiants valides
