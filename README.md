@@ -31,19 +31,6 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
 - Se connecter avec en avec Google OAuth en cliquant sur le bouton "Continue with Google"
 
 ## Test cases
-### Accès au site
-- Cas de test n°1 : Accéder au site
-  - Action n°1 : Cliquer sur le lien de connexion au site
-    - Resultat attendu : affichage de page d'acceuil
-    
-### Contrôle d'affichage
-- Cas de test n°2 : Contrôler la page de création d'un compte 
-  - Action n°1 : Sur la page d'accueil, cliquer sur le bouton "create account"
-    - Resultat Attendu : Affichage d'une nouvelle page '/signup'
-  - Action n°2 : Contrôler le contenu de la page d'inscription
-    - Resultat Attendu :
-      - Affichage des champs "full name" , "Email", "Password", "Confirm Password"
-      - Affichage d'un bouton "signup" et bouton "continue with Google"
 
 ### Connexion au site avec un compte crée via le site
 - Cas de test n°8 : Sur la page login, se connecter avec ses identifiants et mot de passe valides 
