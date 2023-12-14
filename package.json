@@ -4,7 +4,7 @@
   "description": "A boilerplate for Node.js web applications",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahat/hackathon-starter.git"
+    "url": "git+https://github.com/sahat/hackathon-starter.git"
   },
   "license": "MIT",
   "author": "Sahat Yalkabov",
@@ -18,7 +18,7 @@
     "lint": "eslint \"**/*.js\"",
     "prepare": "if [ \"$NODE_ENV\" != \"production\" ]; then husky install; fi",
     "scss": "sass --no-source-map --load-path=./ --update ./public/css:./public/css",
-    "lintStage": "node_modules/.bin/lint-staged"
+    "lintStage": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
@@ -100,5 +100,13 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "bugs": {
+    "url": "https://github.com/sahat/hackathon-starter/issues"
+  },
+  "homepage": "https://github.com/sahat/hackathon-starter#readme",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
   }
 }
