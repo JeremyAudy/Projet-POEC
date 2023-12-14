@@ -17,13 +17,13 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
 ### Acceptance criteria n°1
 - Scénario : l'utilisateur a créé un compte avec Google OAuth
 - Etant donné que : je suis un utilisateur déconnecté et que je suis sur la page de connexion
-- Lorsque : lorsque je clique sur le bouton "Continue with Google"
-- Alors : la fenêtre "Connexion : comptes google" apparait
+- Lorsque : je clique sur le bouton "Continue with Google"
+- Alors : la fenêtre "Connexion : comptes Google" apparait
 
 ### Acceptance criteria n°2
 - Scénario : l'utilisateur a créé un compte via Google OAuth
 - Etant donné que : je suis un utilisateur déconnecté et que je suis sur la page de connexion
-- Lorsque : lorsque je saisis une adresse mail et un mot de passe valides et que je clique sur le bouton "Login"
+- Lorsque : je saisis une adresse mail et un mot de passe valides et que je clique sur le bouton "Login"
 - Alors : le système me connecte
 
 ## Use cases
@@ -73,30 +73,31 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
   - Action n°1 : Sur la page "/signup", cliquer sur le bouton "create account"
     - Resultat Attendu : Affichage d'une nouvelle page 'signup' avec le bouton "continuer with Google"
   - Action n°2 : Cliquer sur le bouton "Continuer with Google"
-    - Resultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
+    - Resultat attendu : Affichage de la fênetre d'authentification Google pour saisir l'email et le mot de passe de Google
   - Action n°3 : Entrer des identifiants Google valides 
-    - Résultat attendu : Affichage de la page d'accueil en mode connecté, c'est-à-dire, avec les boutons "My Account" et "Sign out'" 
+    - Résultat attendu : redirection à la page d'accueil en mode connecté, c'est-à-dire, avec les boutons "My Account" et "Sign out'" 
 
 ### Connexion au site avec un compte crée via le site
-- Cas de test n°8 : se connecter avec ses identifiants et mot de passe valides 
+- Cas de test n°8 : Sur la page login, se connecter avec ses identifiants et mot de passe valides 
   - Action n°1 : Sur la page login, renseinger les champs (Email, Password) correct et cliquer sur le bouton login
-    - Resultat attendu : Affichage d'un message 'Success! You are logged in.'
+    - Resultat attendu : Redirection vers la page d'accueil avec l'affichage dans la page d'un message 'Success! You are logged in.'
 
-- Cas de test n°9 : Se connecter via le site avec un email qui n'existe pas dans la base de données
+- Cas de test n°9 : Sur la page login, se connecter via le site avec un email au format valide qui n'existe pas dans la base de données
   - Action n°1 : Sur la page login, taper un email qui n'existe et un mot de passe quelconque
-    - Resultat attendu : Redirection vers la page d'accueil avec un message d'erreur 'email not found'
+    - Resultat attendu : Affichage dans la page d'un message d'erreur 'email (email renseigné) not found"
   
-- Cas de test n°10 : Se connecter via le site avec un email au format invalide
+- Cas de test n°10 : Sur la page login, se connecter via le site avec un email au format invalide (tous les cas d'email invalide)
   - Action n°1 : Sur la page login, Taper un email au format invalide
-    - Resultat attendu : affichage d'un message d'erreur 'Please enter a valid email address'
+    - Resultat attendu : Affichage sous forme de pop-up à côté du champ "Email" d'un message d'un message d'erreur 
     
-- Cas de test n°11 : Se connecter via le site avec un email correct et un password incorrect
+- Cas de test n°11 : Sur la page login, se connecter via le site avec un email correct et un password incorrect 
   - Action n°1 : Sur la page login, taper un email correct et un password incorrect
-    - Resultat attendu : Message d'erreur "Invalid email or password"
+    - Resultat attendu : Affichage dans la page de messsage d'erreur "Invalid email or password"
 
-- Cas de test n°12 : Se connecter via le site avec un email incorrect et un password correct
+- Cas de test n°12 : Sur la page login, se connecter via le site avec un email incorrect et un password correct
   - Action n°1 : Sur la page login, taper un email incorrect et un password correct
         - Resultat attendu : Message d'erreur "Invalid email or password"
+
 
 ### Connexion au site avec un compte crée Google OAuth
 - Cas de test n°13 : se connecter avec ses identifiants et mot de passe valides 
