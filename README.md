@@ -27,14 +27,8 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
 - Alors : le système me connecte
 
 ## Use cases
-- Accéder au site
-- Créer un compte via le site
-- Créer un compte par Google OAuth
-- Se connecter avec ses identifiants et mot de passe avec compte créer via le site
-- Se connecter avec ses identifiants et mot de passe avec compte créer Google OAuth
-- Se connecter avec Google OAuth avec compte créer via le site
-- Se connecter avec Google OAuth avec compte créer Google OAuth
-- Se déconnecter du site
+- Se connecter avec ses identifiants et mot de passe
+- Se connecter avec en avec Google OAuth en cliquant sur le bouton "Continue with Google"
 
 ## Test cases
 ### Accès au site
@@ -50,32 +44,6 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
     - Resultat Attendu :
       - Affichage des champs "full name" , "Email", "Password", "Confirm Password"
       - Affichage d'un bouton "signup" et bouton "continue with Google"
-
-### Création de compte
-- Cas de test 3 : Créer un compte via le formulaire d'inscription 
-  - Action n°1 : Renseigner les champs (full name, Email, Password, Confirm Password) avec des formats valides et puis cliquer sur le bouton 'signup' 
-    - Resultat attendu : redirection à la page d'accueil en mode connecté, c'est-à-dire avec les boutons "My Account" et "Sign out"
-
-- Cas de test n°4 : Créer un compte via le formulaire d'inscription sans renseigner de champs
-  - Action n°1 : Cliquer sur le bouton "Signup" sans renseigner de champs
-    - Resultat attendu : Affichage sous forme de pop-up à côté du champ "Full name" d'un message "veuillez renseigner ce champ" 
-
-- Cas de test n°5 : Créer un compte via le formulaire d'inscription avec un Email au format invalide (tous les cas d'email invalide)
-  - Action n°1 : entrer un format de mail invalide
-    - Resultat attendu : Affichage sous forme de pop-up à côté du champ "Email" d'un message d'un message d'erreur 
-  
-- Cas de test n°6 : Créer un compte via le formulaire d'inscription avec un mot de passe de mois de 8 caractères.
-  - Action n°1 : Entrer un password d'une longueur inferieure a 8 caracteres
-  - Resultat attendu : Affichage dans la page du message d'erreur "Password must be at least 8 characters long"
-
-
-- Cas de test n°7 : creer un compte avec Google OAuth avec des identifiants valides
-  - Action n°1 : Sur la page "/signup", cliquer sur le bouton "create account"
-    - Resultat Attendu : Affichage d'une nouvelle page 'signup' avec le bouton "continuer with Google"
-  - Action n°2 : Cliquer sur le bouton "Continuer with Google"
-    - Resultat attendu : Affichage de la fênetre d'authentification Google pour saisir l'email et le mot de passe de Google
-  - Action n°3 : Entrer des identifiants Google valides 
-    - Résultat attendu : redirection à la page d'accueil en mode connecté, c'est-à-dire, avec les boutons "My Account" et "Sign out'" 
 
 ### Connexion au site avec un compte crée via le site
 - Cas de test n°8 : Sur la page login, se connecter avec ses identifiants et mot de passe valides 
