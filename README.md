@@ -80,7 +80,13 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
     - Résultat attendu : Redirection vers la page "account"
   - Action n°5 : Renseigner dans les champs "New Password" et "Confirm Password" le mot de passe choisi puis cliquer sur le bouton "Change Password"
     - Résultat attendu :Password has been changed.
-
+  - Action n°6 : Renseigner dans les champs "New Password" et "Confirm Password" le mot de passe choisi puis cliquer sur le bouton "Change Password"
+    - Résultat attendu : Password has been changed.
+ - Action n°7 : Sur la page "account" cliquer sur "Sign out"
+    - Résultat attenndu : Déconnexion et redirection vers la page d'accueil.
+ - Action n°8 : Sur la page d'accueil, cliquer sur "login" puis renseigner son email Google et le mot de passe précédemment renseigné dans la page "account"
+   - Résultat attenndu : Redirection vers la page d'accueil avec l'affichage dans la page d'un message 'Success! You are logged in.'
+  
 - Cas de test n°8 : se connecter avec une adresse mail différente de l'adresse mail Google qui a été utilisée pour créer le compte sur l'application 
   - Action n°1 : Sur la page login, renseigner les champs (Email, Password) avec des identifiants différents du compte Google
     - Résultat attendu : Affichage dans la page de messsage d'erreur "email (email renseigné) not found"
@@ -90,8 +96,13 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
     - Résultat attendu : Disparition de la pop-up d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.'
   - Action n°4 : Cliquer sur le bouton "My Account"
     - Résultat attendu : Redirection vers la page "account"
-  - Action n°5 : Renseigner dans les champs "New Password" et "Confirm Password" le mot de passe choisi puis cliquer sur le bouton "Change Password"
-    - Résultat attendu :Password has been changed.
+  - Action n°5 : Dans la page "account" Renseigner dans les champs "New Password" et "Confirm Password" le mot de passe choisi puis cliquer sur le bouton "Change Password"
+    - Résultat attendu : Affichage dans la page du message "Password has been changed".
+  - Action n°6 : Sur la page "account" cliquer sur "Sign out"
+    - Résultat attenndu : Déconnexion et redirection vers la page d'accueil.
+  - Action n°7 : Sur la page d'accueil, cliquer sur "login" puis renseigner son email Google et le mot de passe précédemment renseigné dans la page "account"
+    - Résultat attenndu : Redirection vers la page d'accueil avec l'affichage dans la page d'un message 'Success! You are logged in.'
+  
 
 ### Connexion avec Google OAuth en ayant un compte créé via l'application (adresse mail Google)
 - Cas de test n°9 : Se connecter avec Google OAuth avec l'adresse mail Google utilisée pour créer le compte
