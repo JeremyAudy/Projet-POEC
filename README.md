@@ -106,8 +106,15 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
 
 ### Connexion avec Google OAuth en ayant un compte créé via l'application (adresse mail Google)
 - Cas de test n°9 : Se connecter avec Google OAuth avec l'adresse mail Google utilisée pour créer le compte
-  - Action n°1 : Cliquer sur "Continue with Google"
-    - Résultat attendu : Affichage d'une nouvelle page'/forgot'
+  - Action n°1 : Sur la page login, cliquer sur le bouton "Continue with Google"
+ - Résultat attendu : Affichage de la pop-up d'authentification Google
+  - Action n°2 : Sur la page login, entrer des identifiants Google valides 
+    - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
 
-- Cas de test n°8 : cliquer sur le bouton 'sign out' 
-  - Résultat attendu :' success de sign out'
+- Cas de test n°10 : Se connecter avec Google OAuth avec un compte google différent de celui utilisé pour créer le compte sur l'application
+  - Action n°1 : Sur la page login, cliquer sur le bouton "Continue with Google"
+ - Résultat attendu : Affichage de la pop-up d'authentification Google
+  - Action n°2 : Sur la page login, entrer des identifiants Google valides 
+    - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
+
+
