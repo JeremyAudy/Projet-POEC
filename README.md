@@ -11,7 +11,7 @@
 - Visit http://localhost:8080/
 
 ## User story
-En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'application avec Google OAuth et également avec un identifiant et mot de passe, afin que je puisse accéder à mon compte
+En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec Google OAuth et également avec un identifiant et mot de passe, afin que je puisse accéder à mon compte
 
 ## Acceptance criteria
 ### Acceptance criteria n°1
@@ -37,7 +37,7 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
 - Se connecter ses identifiants et mot de passe en ayant un compte crée via Google OAuth
 - Se connecter avec Google OAuth en ayant un compte créé via l'application (adresse mail Google)
 
-## Test cases
+## Test cases correspondant aux use cases secondaires
 
 ### Connexion au site avec un compte crée via le site
 - Cas de test n°1 : Sur la page login, se connecter avec ses identifiants et mot de passe valides 
@@ -61,7 +61,7 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
         - Résultat attendu : Message d'erreur "Invalid email or password"
 
 
-### Connexion au site avec un compte crée Google OAuth
+### Connexion au site avec un compte crée via Google OAuth
 - Cas de test n°6 : se connecter avec des identifiants et mot de passe valides 
   - Action n°1 : Sur la page login, clique sur le bouton "Continue with Google"
  - Résultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
