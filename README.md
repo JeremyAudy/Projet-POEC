@@ -70,11 +70,17 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
 
 ### Connexion avec ses identifiants et mot de passe en ayant un compte crée via Google OAuth
 - Cas de test n°7 : se connecter avec ses identifiants google 
-  - Action n°1 : Sur la page login, renseigner les champs (Email, Password) Google et cliquer sur le bouton login
- - Résultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
-  - Action n°2 : Entrer des identifiants Google valides 
-    - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
-
+  - Action n°1 : Sur la page login, renseigner les champs (Email, Password) du compte Google et cliquer sur le bouton login
+    - Résultat attendu : Affichage dans la page de messsage d'erreur "Invalid email or password"
+  - Action n°2 : Sur la page login, clique sur le bouton "Continue with Google"
+    - Résultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
+  - Action n°3 : Sur la page login, entrer des identifiants Google valides 
+    - Résultat attendu : Disparition de la pop-up d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.'
+  - Action n°4 : Cliquer sur le bouton "My Account"
+    - Résultat attendu : Redirection vers la page "account"
+  - Action n°5 : Renseigner dans les champs "New Password" et "Confirm Password" le mot de passe choisi puis cliquer sur le bouton "Change Password"
+    - Résultat attendu :Password has been changed.
+   
 
 
 - Cas de test n°7 : cliquer sur le lien 'forgot your password'
