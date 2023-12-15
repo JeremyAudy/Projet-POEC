@@ -27,8 +27,15 @@ En tant qu'utilisateur déconnecté, je souhaite pouvoir me connecter à l'appli
 - Alors : le système me connecte
 
 ## Use cases
+### Use cases principales
 - Se connecter avec ses identifiants et mot de passe
 - Se connecter avec en avec Google OAuth en cliquant sur le bouton "Continue with Google"
+
+### Use cases secondaires
+- Se connecter avec ses identifiants et mot de passe en ayant un compte crée via l'application
+- Se connecter avec Google OAuth en ayant un compte créé avec Google OAuth
+- Se connecter ses identifiants et mot de passe en ayant un compte crée via Google OAuth
+- Se connecter avec Google OAuth en ayant un compte créé via l'application (adresse mail Google)
 
 ## Test cases
 
