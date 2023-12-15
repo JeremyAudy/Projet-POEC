@@ -126,5 +126,5 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
  - Résultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
   - Action n°2 : Sur la page login, entrer des identifiants Google valides 
     - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page "Full Name"
-  - Action n°3 : Renseigner le champ "Full Name" et cliquer sur "Terminer l'inscrition"
+  - Action n°3 : Renseigner le champ "Full Name" et cliquer sur "Suivant"
     - Résultat attendu : Redirection vers la page d'accueil avec l'affichage dans la page d'un message 'Success! You are logged in.'
