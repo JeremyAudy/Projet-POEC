@@ -68,6 +68,9 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
   - Action n°2 : Sur la page login, entrer des identifiants Google valides 
     - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
 
+
+
+
 ### Connexion avec ses identifiants et mot de passe en ayant un compte crée via Google OAuth
 - Cas de test n°7 : se connecter avec ses identifiants google 
   - Action n°1 : Sur la page login, renseigner les champs (Email, Password) du compte Google et cliquer sur le bouton login
@@ -112,9 +115,4 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
     - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
 
 - Cas de test n°10 : Se connecter avec Google OAuth avec un compte google différent de celui utilisé pour créer le compte sur l'application
-  - Action n°1 : Sur la page login, cliquer sur le bouton "Continue with Google"
- - Résultat attendu : Affichage de la pop-up d'authentification Google
-  - Action n°2 : Sur la page login, entrer des identifiants Google valides 
-    - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
-
-
+ 
