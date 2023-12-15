@@ -68,11 +68,18 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
   - Action n°2 : Sur la page login, entrer des identifiants Google valides 
     - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
 
-
+### Connexion avec Google OAuth sans compte créé sur l'application
+- Cas de test n°7 : se connecter avec des identifiants et mot de passe Google valides 
+  - Action n°1 : Sur la page login, clique sur le bouton "Continue with Google"
+ - Résultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
+  - Action n°2 : Sur la page login, entrer des identifiants Google valides 
+    - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page "Full Name"
+  - Action n°3 : Renseigner le champ "Full Name" et cliquer sur "Terminer l'inscrition"
+    - Résultat attendu : Redirection vers la page d'accueil avec l'affichage dans la page d'un message 'Success! You are logged in.'
 
 
 ### Connexion avec ses identifiants et mot de passe en ayant un compte crée via Google OAuth
-- Cas de test n°7 : se connecter avec ses identifiants google 
+- Cas de test n°8 : se connecter avec ses identifiants google 
   - Action n°1 : Sur la page login, renseigner les champs (Email, Password) du compte Google et cliquer sur le bouton login
     - Résultat attendu : Affichage dans la page de messsage d'erreur "Invalid email or password"
   - Action n°2 : Sur la page login, clique sur le bouton "Continue with Google"
@@ -90,7 +97,7 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
  - Action n°8 : Sur la page d'accueil, cliquer sur "login" puis renseigner son email Google et le mot de passe précédemment renseigné dans la page "account"
    - Résultat attenndu : Redirection vers la page d'accueil avec l'affichage dans la page d'un message 'Success! You are logged in.'
   
-- Cas de test n°8 : se connecter avec une adresse mail différente de l'adresse mail Google qui a été utilisée pour créer le compte sur l'application 
+- Cas de test n°9 : se connecter avec une adresse mail différente de l'adresse mail Google qui a été utilisée pour créer le compte sur l'application 
   - Action n°1 : Sur la page login, renseigner les champs (Email, Password) avec des identifiants différents du compte Google
     - Résultat attendu : Affichage dans la page de messsage d'erreur "email (email renseigné) not found"
   - Action n°2 : Sur la page login, clique sur le bouton "Continue with Google"
@@ -115,4 +122,9 @@ En tant qu'utilisateur, je souhaite pouvoir me connecter à l'application avec G
     - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page d'accueil avec un message 'Success! You are logged in.' 
 
 - Cas de test n°10 : Se connecter avec Google OAuth avec un compte google différent de celui utilisé pour créer le compte sur l'application
- 
+  - Action n°1 : Sur la page login, clique sur le bouton "Continue with Google"
+ - Résultat attendu : Affichage d'une autre page pour saisir l'email et le mot de passe de Google Oauth
+  - Action n°2 : Sur la page login, entrer des identifiants Google valides 
+    - Résultat attendu : Disparition de la fenêtre d'authentification Google et redirection vers la page "Full Name"
+  - Action n°3 : Renseigner le champ "Full Name" et cliquer sur "Terminer l'inscrition"
+    - Résultat attendu : Redirection vers la page d'accueil avec l'affichage dans la page d'un message 'Success! You are logged in.'
